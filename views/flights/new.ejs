@@ -9,13 +9,23 @@
 </head>
 <body>
 
-  <h1>Enter a New Movie</h1>
+  <h1>Enter a New Flight</h1>
   <form action="/flights" method="POST">
     <label>airline:
-      <input type="text" name="airline">
+      <select name="airline">
+        <option value="American">American</option>
+        <option value="Southwest">Southwest</option>
+        <option value="United">United</option>
+      </select>
     </label><br>
     <label>airport:
-      <input type="text" name="airport">
+      <select name="airport">
+        <option value="AUS">AUS</option>
+        <option value="DFW">DFW</option>
+        <option value="DEN">DEN</option>
+        <option value="SAN">SAN</option>
+        <option value="LAX">LAX</option>
+      </select>
     </label><br>
     <label>flight No.:
       <input type="text" name="flightNo">
