@@ -55,3 +55,34 @@ li:hover{
   color: aqua;
   transform: scale(1.1);
 }
+
+.index-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 70vh;
+}
+#index{
+  background-image: ;
+}
+h3 {
+  width: 300px;
+}
+
+#frontpage {
+  border: 0px;
+  border-radius: 12px;
+  background-color: aqua;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#frontpage:hover {
+  transform: scale(1.1);
+  background-color: black;
+}

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   <title><%= title %></title>
 </head>
-<body>
+<body id="index">
   <header>
     <a href="#" id="logo">Flights</a>
     <nav>
@@ -23,8 +23,10 @@
   </header>
   <div class="index-content">
   <h1>Where Are You Going?</h1>
-  <a href="/flights/new"><button>New Flights</button></a>
-  <a href="/flights"><button>All Flights</button></a>
+
+  <div id="homebtn"><a href="/flights/new"><button id="frontpage">New Flights</button></a>
+  <a href="/flights"><button id="frontpage">All Flights</button></a>
+</div>
   </div>
 </body>
 </html>
