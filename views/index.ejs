@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Press+Start+2P&family=Roboto:wght@100&family=VT323&display=swap');
+    </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +11,20 @@
   <title><%= title %></title>
 </head>
 <body>
-  <h1><%= title %></h1>
-  <a href="/flights/new">New Flight</a>
-  <a href="/flights">All flights</a>
+  <header>
+    <a href="#" id="logo">Flights</a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#">New Flight</a></li>
+        <li><a href="#">All Flights</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+  <div class="index-content">
+  <h1>Where Are You Going?</h1>
+  <a href="/flights/new"><button>New Flights</button></a>
+  <a href="/flights"><button>All Flights</button></a>
+  </div>
 </body>
 </html>
