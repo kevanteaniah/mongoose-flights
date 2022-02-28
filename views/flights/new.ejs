@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Press+Start+2P&family=Roboto:wght@100&family=VT323&display=swap');
+  </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +11,29 @@
   <title>Document</title>
 </head>
 <body>
-
-  <h1>Enter a New Flight</h1>
+  <body id="index">
+    <header>
+      <a href="/" id="logo">Flights</a>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="/flights/new">New Flight</a></li>
+          <li><a href="/flights">All Flights</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+<div id="new-content">
+  <div class="center-content">
+  <h1 id="title-new">Enter a New Flight</h1>
   <form action="/flights" method="POST">
-    <label>airline:
+    <label>airline
       <select name="airline">
         <option value="American">American</option>
         <option value="Southwest">Southwest</option>
         <option value="United">United</option>
       </select>
     </label><br>
-    <label>airport:
+    <label>airport
       <select name="airport">
         <option value="AUS">AUS</option>
         <option value="DFW">DFW</option>
@@ -27,14 +42,15 @@
         <option value="LAX">LAX</option>
       </select>
     </label><br>
-    <label>flight No.:
+    <label>flight No.
       <input type="text" name="flightNo">
     </label><br>
-    <label>departs:
+    <label>departs
       <input type="text" name="departs" checked>
     </label><br>
-    <button type="submit">Add Flight</button>
+    <button type="submit" id="submit">Add Flight</button>
   </form>
-  
+  </div>
+</div>
 </body>
 </html>

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Press+Start+2P&family=Roboto:wght@100&family=VT323&display=swap');
+    </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,7 +11,17 @@
   <title>Mongoose Flights</title>
 </head>
 <body>
-  <h1>Flight List</h1>
+  <header>
+    <a href="/" id="logo">Flights</a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="/flights/new">New Flight</a></li>
+        <li><a href="/flights">All Flights</a></li>
+      </ul>
+    </nav>
+    </header>
+<div class="flights-table">
+  <h1 id="table-title">Flight List</h1>
   <table>
     <thead>
       <tr>
@@ -36,5 +49,6 @@
       <% }) %>
     </tbody>
   </table>
+</div>
 </body>
 </html>

@@ -6,7 +6,7 @@
 }
 
 body {
-  
+
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 }
@@ -65,7 +65,8 @@ li:hover{
   height: 70vh;
 }
 #index{
-  background-image: ;
+  background-image: url("/images/Aerial-One&OnlyReethiRah-Maldives-CRHotel.jpg") ;
+  background-repeat: no-repeat;
 }
 h3 {
   width: 300px;
@@ -74,7 +75,7 @@ h3 {
 #frontpage {
   border: 0px;
   border-radius: 12px;
-  background-color: aqua;
+  background-color: rgba(3, 188, 245, 0.692);
   padding: 10px;
   margin: 5px;
   color: white;
@@ -85,4 +86,95 @@ h3 {
 #frontpage:hover {
   transform: scale(1.1);
   background-color: black;
+}
+
+#new-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 75vh;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.center-content {
+  
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: none;
+}
+
+select:hover {
+  transform: scale(1.1);
+}
+
+input:hover{
+  border-radius: 12px;
+  border: 1px solid rgba(3, 188, 245, 0.692);
+  
+}
+
+#title-new{
+  margin-bottom: 20px;
+}
+
+#submit{
+  background-color: rgba(3, 188, 245, 0.692);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.flights-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 30vh
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th{
+  margin-top: 10px;
+  background-color: rgba(3, 188, 245, 0.692);
+  color: white;
+  font-weight: bolder;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table-title{
+  margin-bottom: 10px;
 }
