@@ -12,16 +12,6 @@
 </head>
 <body>
   <body id="index">
-    <header>
-      <a href="/" id="logo">Flights</a>
-      <nav>
-        <ul class="nav_links">
-          <li><a href="/flights/new">New Flight</a></li>
-          <li><a href="/flights">All Flights</a></li>
-        </ul>
-      </nav>
-      
-    </header>
 <div id="new-content">
   <div class="center-content">
   <h1 id="title-new">Enter a New Flight</h1>
@@ -46,7 +36,7 @@
       <input type="text" name="flightNo">
     </label><br>
     <label>departs
-      <input type="text" name="departs" checked>
+      <input type="datetime-local" name="departs">
     </label><br>
     <button type="submit" id="submit">Add Flight</button>
   </form>

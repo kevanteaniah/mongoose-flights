@@ -15,7 +15,7 @@ const app = express()
 
 // view engine setup
 app.set(
-  'views',
+  'views', 
   path.join(path.dirname(fileURLToPath(import.meta.url)), 'views')
 )
 app.set('view engine', 'ejs')
