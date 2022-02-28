@@ -5,6 +5,8 @@ const router = Router()
 router.get('/', flightsCtrl.index)
 /* GET users listing. */
 router.get('/new', flightsCtrl.new)
+//Get localhost:3000/flights/show
+router.get('/:id', flightsCtrl.show)
 
 router.post('/', flightsCtrl.create)
 

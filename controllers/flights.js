@@ -2,12 +2,15 @@ import mongoose from 'mongoose'
 import { Flight } from '../models/flight.js'
 
 function newFlight(req, res){
-  res.render('flights/new')
+  res.render('flights/new', {
+    title: "Add a New Flight"
+  })
 }
 
 function index(req, res){
   Flight.find({}, function(error, flights){
     res.render('flights/index', {
+      title: "Flights",
       flights: flights,
       airline: "airline",
       airport: "airport",
@@ -28,8 +31,18 @@ function create(req, res) {
   })
 }
 
+function show(req,res){
+  Flight.findById(req.params.id, function(err, flight){
+    res.render('flights/show',{
+      title: 'Flights Details',
+      flight: flight,
+    })
+  })
+}
+
 export {
   newFlight as new,
   index,
   create,
+  show,
 }

@@ -1,0 +1,38 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/movies/show.css" />
+<%- include('../partials/nav') %>
+
+<main>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Airline</th>
+        <th>Airport</th>
+        <th>Flight No.</th>
+        <th>Departs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= flight.airline %></td>
+        <td><%= flight.airport %></td>
+        <td><%= flight.flightNo %></td>
+        <td><%= flight.departs %></td>
+        
+      </tr>
+    </tbody>
+  <!-- <h1><%= title %></h1>
+  <section>
+    <div>Title: </div>
+    <div><%= flight.airline %></div>
+    <div>Airport: </div>
+    <div><%= flight.airport %></div>
+    <div>Flight No. </div>
+    <div><%= flight.flightNo %></div>
+    <div>Departs </div>
+    <div><%= flight.departs %></div>
+  </section> -->
+</main>
+
+<%- include('../partials/footer') %>

@@ -11,8 +11,15 @@ body {
   font-weight: bolder;
 }
 
+.nav-links{
+  padding-right: 10px;
+}
+
+.nav-links:hover {
+  transform: scale(1.1);
+}
+
 a {
-  
   text-decoration: none;
   color: inherit;
 }
@@ -32,9 +39,10 @@ nav {
   padding: 20px;
   width: 100%;
   background-color: rgb(46, 46, 46);
-  color: rgb(0, 93, 175);
-  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
+
 
 #logo {
   margin-right: auto;
@@ -143,16 +151,16 @@ input:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
-  height: 30vh
+  margin-top: 20px;
+  
 }
 
 table, th, td {
-  border: 1px solid;
+  border: 1px solid rgb(241, 241, 241);
 }
 
 table{
-  width: 100%;
+  
   border-collapse: collapse;
 }
 
@@ -163,7 +171,7 @@ th, td {
 
 th{
   margin-top: 10px;
-  background-color: rgba(3, 188, 245, 0.692);
+  background-color: rgba(4, 163, 211, 0.692);
   color: white;
   font-weight: bolder;
 }
