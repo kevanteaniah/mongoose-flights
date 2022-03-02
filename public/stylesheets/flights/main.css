@@ -183,3 +183,8 @@ tr:nth-child(even) {
 #table-title{
   margin-bottom: 10px;
 }
+
+#ticket-details{
+  display: flex;
+  flex-direction: column;
+}

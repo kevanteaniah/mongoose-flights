@@ -10,6 +10,10 @@ router.get('/:id', flightsCtrl.show)
 
 router.post('/', flightsCtrl.create)
 
+router.post('/:id/tickets', flightsCtrl.createTicket)
+
+router.delete('/:id', flightsCtrl.delete)
+
 // router.get('/', function(req, res) {
 //   res.send('respond with a resource')
 // })

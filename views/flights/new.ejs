@@ -15,7 +15,7 @@
       </select>
     </label><br>
     <label>airport
-      <select name="airport">
+      <select name="airport" required>
         <option value="AUS">AUS</option>
         <option value="DFW">DFW</option>
         <option value="DEN">DEN</option>
@@ -24,12 +24,12 @@
       </select>
     </label><br>
     <label>flight No.
-      <input type="text" name="flightNo">
+      <input type="number" name="flightNo" min="999999" max="9999999999" required>
     </label><br>
     <label>departs
-      <input type="datetime-local" name="departs">
+      <input type="datetime-local" name="departs" required>
     </label><br>
-    <button type="submit" id="submit">Add Flight</button>
+    <button type="submit" id="submit" required>Add Flight</button>
   </form>
   </div>
 </div>
