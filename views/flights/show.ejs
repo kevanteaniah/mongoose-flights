@@ -5,7 +5,7 @@
 <main>
 
 <main>
-  <h1><%= title %> </h1>
+  <!-- <h1></h1> -->
   <div id="ticket-details">
   <section id="ticket-deets">
     <div id="one">Airline 
@@ -17,8 +17,30 @@
     <div><%= flight.flightNo %></div>
     <div>Departure Time </div>
     <div><%= flight.departs %></div>
+    
   </section>
+
+  <div>Meal:</div>
+  <ul id="meal-list">
+    <% flight.meals.forEach(meal => { %>
+      <li><%= meals.name %></li>
+    <% }) %>
+  </ul>
 </div>
+<div id="meal">
+<form id="add-per-to-cast" action="/flights/<%= flight._id %>/meals" method="POST">
+  <select name="mealId">
+    <% meals.forEach(meal => { %>
+      <option value="<%= meal._id %>"><%= meal.name %></option>
+    <% }) %>
+  </select>
+  <button type="submit">Add to Meals</button>
+</form>
+</div>
+
+
+
+<div id="tickets">
   <h2>tickets</h2>
   <form 
     id="add-review-form"
@@ -28,11 +50,13 @@
     <label for="seat-info">Seat:</label>
     <input type="text" name="seat" id="seat-info" required></input>
     <label for="price-info">Price:</label>
-    <input type="text" name="seat" id="price-info" required></input>
+    <input type="text" name="price" id="price-info" required></input>
     <button id="submit" type="submit">Add Ticket</button>
   </form>
+</div>
 
-  <% if (flight.tickets.length) { %>
+  <% if(flight.tickets.length) { %>
+    <%= console.log("tickets") %> 
     <table>
       <thead>
         <tr>
@@ -51,6 +75,7 @@
     </table>
   <% } else { %>
     <h3>No Tickets Yet</h3>
+    <%= console.log("no ticket") %> 
   <% } %>
 
 

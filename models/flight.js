@@ -14,8 +14,9 @@ const flightSchema = new Schema({
   airline: String,
   airport: String,
   flightNo: {type: Number, min:999, max:999999999},
-  departs:{ type: Date,default:Date.now + 365,} ,
-  tickets: [ticketSchema]
+  departs:{ type: Date, default:Date.now} ,
+  tickets: [ticketSchema],
+  meals: [{type: Schema.Types.ObjectId, ref: 'Meal'}]
   }, {
     timestamps:true
   }

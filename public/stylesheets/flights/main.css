@@ -116,7 +116,7 @@ input, select {
   margin: 8px 0;
   box-sizing: border-box;
   font-size: 15px;
-  border: none;
+  border: 1px solid black;
 }
 
 select:hover {
