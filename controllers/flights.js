@@ -25,7 +25,6 @@ function create(req, res) {
 
   const flight = new Flight(req.body)
   flight.save(function(err) {
-    console.log(err)
 		if (err) return res.render('flights/new')
     
     res.redirect(`/flights/${flight._id}`)
@@ -34,9 +33,9 @@ function create(req, res) {
 
 function show(req,res){
   Flight.findById(req.params.id)
-    .populate('tickets')
+    .populate('meals')
     .exec(function(err, flight){
-      Meal.find({_id: {$nin: flight.ticket}}, function(err, meals) {
+      Meal.find({_id: {$nin: flight.tickets}}, function(err, meals) {
         res.render('flights/show', {
           title: 'Flight Detail', 
           flight: flight,
@@ -54,13 +53,10 @@ function deleteFlight(req, res){
 
 function createTicket(req, res){
   Flight.findById(req.params.id, function(err, flight) {
-    console.log("this is",flight)
     flight.tickets.push(req.body)
     flight.save(function(err) {
-      console.log(err)
       res.redirect(`/flights/${flight._id}`)
     })
-    console.log("After is", flight)
   })
 }
 function addToMeals(req, res) {
